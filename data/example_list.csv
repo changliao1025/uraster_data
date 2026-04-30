@@ -1,0 +1,38 @@
+,Mesh information,,,,Raster information,,,,,,,,,Reference
+Example index,Description,Mesh type,File name,Cell size,Description,File name,Single/multi-tile,Continuous/discrete ,Spatial resolution,CRS,Spatial coverage,Data source,Resample method,
+1,"Global rhealpix mesh, 116744 km2 cell size",rhealpix,rhealpix_global_res3.geojson,116744 km2,"EDGAR CH4 manure management inventory data in 2015, unit ton. The raw netCDF data has been pre-processed to tiff file.",EDGAR_CH4_emission_global_2015.tiff,single,continuous,0.1 x 0.1°,EPSG 4326,global,https://data.jrc.ec.europa.eu/dataset/b54d8149-2864-4fb9-96b9-5fd3a020c224,Average,"Crippa, M., et al. (2021). High resolution temporal profiles in the Emissions Database for Global Atmospheric Research (EDGAR)."
+2,"isea3h mesh for Toronto and Buffalo, 3.55 km2 cell size",isea3h,isea3h_bbox_res15.geojson,3.55 km2,"World settlement footprint data, 255/0 binary ",WSF2015_v2_-80_42.tif,single,discrete,0.32 arcsec,EPSG 4326,"one tile covering Toronto, Canada and Buffalo, US",https://download.geoservice.dlr.de/WSF2015/,Dominant,"Marconcini, M., et al. (2020). Outlining where humans live, the World Settlement Footprint 2015. Scientific Data, 7(1), 242."
+3,"rhealpix mesh for mainland China, 116744 km2 cell size",rhealpix,"rhealpix_China_res3.geojson
+","116744 km2
+","Coal Mine Methane Emissions in China in 2020, unit Mg km-2 a-1",China_CH4_emission_2020.tif,single,continuous,10 x 10 km,EPSG 4024,mainland China,https://pubs.acs.org/doi/full/10.1021/acs.estlett.9b00294,Average,"Sheng, J., et al. (2019). Bottom-Up Estimates of Coal Mine Methane Emissions in China: A Gridded Inventory, Emission Factors, and Trends. Environmental Science & Technology Letters, 6(8), 473-478."
+4,"rhealpix mesh for mainland China, 160 km2 cell size",rhealpix,"
+rhealpix_China_res6.geojson","
+160 km2",,same as example 3,,,,,,,Average,same as example 3
+5,"isea7h mesh for the inland east US, 3034.84 km2 cell size",isea7h,isea7h_bbox_res5.geojson,3034.84 km2,"Tree cover in the year 2000, defined as canopy closure for all vegetation taller than 5m in height. Encoded as a percentage per output grid cell, in the range 0–100.","Hansen_GFC-2019-v1.7_treecover2000_40N_090W.tif
+Hansen_GFC-2019-v1.7_treecover2000_40N_100W.tif
+Hansen_GFC-2019-v1.7_treecover2000_50N_090W.tif
+Hansen_GFC-2019-v1.7_treecover2000_50N_100W.tif
+",multi-tile,continuous,0.00025 x 0.00025°,EPSG 4326,four tiles covering the inland east US,https://earthenginepartners.appspot.com/science-2013-global-forest/download_v1.7.html,Average,"Hansen, M. C., et al. (2013). High-Resolution Global Maps of 21st-Century Forest Cover Change. Science, 342(6160), 850-853."
+6,"isea7h mesh for high-latitude area in Nunavut, 1.26 km2 cell size",isea7h,isea7h_bbox_res8.geojson,1.26 km2,"ArcticDEM is a high-resolution, high quality, digital surface model (DSM) of the Arctic. DSM can be viewed as DEM in the Arctic.
+FABDEM (Forest And Buildings removed Copernicus DEM) is a global elevation map that removes building and tree height biases from the Copernicus GLO 30 Digital Elevation Model (DEM).
+","ArcticDEM_32_34_1_1_2m_v4.1_dem.tif
+ArcticDEM_32_34_1_2_2m_v4.1_dem.tif
+ArcticDEM_32_35_1_1_2m_v4.1_dem.tif
+N79W078_FABDEM_V1-0.tif
+N79W079_FABDEM_V1-0.tif
+N79W080_FABDEM_V1-0.tif
+N79W081_FABDEM_V1-0.tif
+N79W082_FABDEM_V1-0.tif
+N79W083_FABDEM_V1-0.tif",multi-tile,continuous,"ArcticDEM - 2 x 2 m
+FEBDEM - 1 arcsec","ArcticDEM - EPSG 3413
+FEBDEM - EPSG 4326","three ArcticDEM tiles + six FEBDEM tiles, covering high-latitude area in nunavut","https://data.bris.ac.uk/data/dataset/25wfy0f9ukoge2gs7a5mqpq2j7
+https://www.arcgis.com/apps/webappviewer/index.html?id=aff5fa8f5d5548c6bff44cc8be385f61",Average,"Hawker, L., Uhe, P., Paulo, L., Sosa, J., Savage, J., Sampson, C. and Neal, J., 2022. A 30 m global map of elevation with forests and buildings removed. Environmental Research Letters, 17(2), 024016.
+    Porter, Claire; Howat, Ian; Noh, Myoung-Jon; Husby, Erik; Khuvis, Samuel; Danish, Evan; Tomko, Karen; Gardiner, Judith; Negrete, Adelaide; Yadav, Bidhyananda; Klassen, James; Kelleher, Cole; Cloutier, Michael; Bakker, Jesse; Enos, Jeremy; Arnold, Galen; Bauer, Greg; Morin, Paul, (2023): ArcticDEM - Mosaics, Version 4.1, Harvard Dataverse, V1 [Dataset] doi:10.7910/DVN/3VDC4W"
+7,"isea3h mesh for the Rocky Mountains and surrounding areas, 95.98 km2 cell size",isea3h,isea3h_bbox_res12.geojson,95.98 km2,Esri land use/land cover derived from ESA Sentinel-2 imagery in 2024,"11T_20240101-20241231.tif
+11U_20240101-20241231.tif
+12T_20240101-20241231.tif
+12U_20240101-20241231.tif",multi-tile,discrete,10 x 10 m,"EPSG 32612
+EPSG 32611",four tiles covering part of the Rocky Mountains and the surrounding areas,https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=-117.27100%2C33.94200%2C10.00&mode=step&timeExtent=2017%2C2022&year=2022,Dominant,"Karra, K., et al. (2021). Global land use/land cover with Sentinel-2 and deep learning. IGARSS 2021."
+8,"Tin mesh for the Susquehanna river basin, generated using JIGSAW",tin,tin.geojson,NA,HydroSHEDS global digital elevation model (DEM),hyd_glo_dem_15s.tif,single,continuous,15 arc-second,EPSG 4326,Global,https://www.hydrosheds.org/,Average,"Lehner, B., et al. (2008). New global hydrography derived from spaceborne elevation data. Eos, Transactions American Geophysical Union, 89(10), 93-94."
+9,Global mpas mesh,mpas,mpas.geojson,NA,,same as example 8,,,,,,,Average,same as example 8
+10,same as example 3,rhealpix,same as example 3,,,same as example 3,,,,,,,Weighted average,same as example 3
